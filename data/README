@@ -1,0 +1,20 @@
+This is the README file of PaCCSS-IT, a corpus of Complex-Simple Aligned Sentences for ITalian, described in the paper "PaCCSS-IT: A Parallel Corpus of Complex-Simple Sentences for Automatic Text Simplification".
+It contains ~63,000 pairs of sentences.
+
+Source data: 
+the sentences were extracted and automatically aligned from the ItWaC corpus (Baroni et al., 2009), the largest copy-right free corpus of contemporary Italian web texts.
+
+Data Format:
+each line represents an alignment containing the following 6 fields separated by a single tab character:
+- Sentence_1: the complex sentence of the alignment
+- Sentence_2: the simple sentence of the alignment
+- Cosine_Similarity: the cosine similarity between the two sentences
+- Confidence: the probability of the alignment calculated by the supervised classifier 
+- Readability_1: the readability score of Sentence_1 calculated by READ-IT (Dell'Orletta et al., 2011)
+- Readability_2: the readability score of Sentence_2 calculated by READ-IT (Dell'Orletta et al., 2011)
+- (Readability_1-Readability_2): the difference between Readability_1 and Readability_2
+
+References:
+M. Baroni, S. Bernardini, A. Ferraresi, and E. Zanchetta. 2009. The WaCky wide web: A collection of very large linguistically processed web-crawled corpora. Language Resources and Evaluation, 43(3):209–226.
+
+Felice Dell'Orletta, Simonetta Montemagni, and Giulia Venturi. 2011. READ-IT: assessing readability of italian texts with a view to text simplification. Proceedings of the Second Workshop on Speech and Language Processing for Assistive Technologies (SLPAT), Edinburgh, UK.
